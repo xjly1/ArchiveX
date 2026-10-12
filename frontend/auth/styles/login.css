@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.brand {
+    margin-bottom: 40px;
+}
+
+.brand img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.brand h1 {
+    margin: 8px 0 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#loginForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: right;
+}
+
+#loginForm div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#error {
+    margin: 0;
+    min-height: 20px;
+    font-size: 13px;
+    text-align: center;
+}

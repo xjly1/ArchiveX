@@ -1,0 +1,45 @@
+# Virtual environments
+
+.venv/
+.venv_*/
+**/.venv/
+**/.venv_*/
+
+# OCR models and downloaded engines
+
+engine/
+**/engine/
+
+# Node.js dependencies
+
+node_modules/
+**/node_modules/
+
+# Python caches and compiled files
+
+**pycache**/
+**/**pycache**/
+*.py[cod]
+*$py.class
+
+# Environment variables and secrets
+
+.env
+.env.*
+!.env.example
+
+# Local machine configuration
+
+/config.json
+
+# Logs
+
+*.log
+
+# OS-generated files
+
+.DS_Store
+Thumbs.db
+
+# Legacy uploader files
+/backend/uploader/old/

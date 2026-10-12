@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
+
+        <title>ArchiveX</title>
+
+        <link
+            rel="stylesheet"
+            href="../styles/upload.css"
+        >
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="settings">
+                <button
+                    class="settings-button"
+                    type="button"
+                >
+                    ⚙
+                </button>
+
+                <div class="settings-menu">
+                    <button
+                        class="language-button"
+                        type="button"
+                        data-ar="اللغة"
+                        data-en="Language"
+                    >
+                        اللغة
+                    </button>
+
+                    <button
+                        class="logout-button"
+                        type="button"
+                        data-ar="تسجيل الخروج"
+                        data-en="Logout"
+                    >
+                        تسجيل الخروج
+                    </button>
+                </div>
+            </div>
+
+            <a
+                class="brand"
+                href="dashboard.html"
+            >
+                <img
+                    class="logo"
+                    src="/ArchiveX_Logo.png"
+                    alt="ArchiveX Logo"
+                >
+
+                <span class="project-name">
+                    ArchiveX
+                </span>
+            </a>
+        </header>
+
+
+        <nav class="sidebar">
+            <a
+                class="sidebar-button"
+                href="dashboard.html"
+                data-ar="لوحة التحكم"
+                data-en="Dashboard"
+            >
+                لوحة التحكم
+            </a>
+
+            <a
+                class="sidebar-button"
+                href="upload.html"
+                data-ar="رفع"
+                data-en="Upload"
+            >
+                رفع
+            </a>
+        </nav>
+
+
+        <main class="container">
+
+            <section class="card">
+                <h2
+                    data-ar="رفع الصورة"
+                    data-en="Upload Image"
+                >
+                    رفع الصورة
+                </h2>
+
+                <label class="upload">
+
+                    <span
+                        id="fileName"
+                        data-ar="اضغط لاختيار صورة"
+                        data-en="Click to choose an image"
+                    >
+                        اضغط لاختيار صورة
+                    </span>
+
+                    <input
+                        id="imageInput"
+                        type="file"
+                        accept="image/*"
+                    >
+
+                </label>
+
+                <div
+                    id="imagePreview"
+                    class="image-preview"
+                    style="display: none;"
+                >
+                    <img
+                        id="previewImage"
+                        src=""
+                        alt="Image Preview"
+                    >
+                </div>
+            </section>
+
+
+            <section class="card">
+                <h2
+                    data-ar="اختيار اللغة"
+                    data-en="Select Language"
+                >
+                    اختيار اللغة
+                </h2>
+
+                <label class="option">
+                    <input
+                        type="radio"
+                        name="language"
+                        value="ar"
+                    >
+
+                    <span
+                        data-ar="العربية"
+                        data-en="Arabic"
+                    >
+                        العربية
+                    </span>
+                </label>
+
+                <label class="option">
+                    <input
+                        type="radio"
+                        name="language"
+                        value="en"
+                    >
+
+                    <span
+                        data-ar="الإنجليزية"
+                        data-en="English"
+                    >
+                        English
+                    </span>
+                </label>
+            </section>
+
+
+            <section
+                class="card"
+                id="conditionsSection"
+                style="display: none;"
+            >
+                <h2
+                    data-ar="اختيار المشكلة"
+                    data-en="Select Problem"
+                >
+                    اختيار المشكلة
+                </h2>
+
+                <div
+                    class="language-conditions"
+                    data-language="ar"
+                    style="display: none;"
+                >
+                    <label class="option">
+                        <input
+                            type="checkbox"
+                            name="condition"
+                            value="rotate"
+                        >
+
+                        <span
+                            data-ar="نص مقلوب/مائل بزاوية"
+                            data-en="Rotated/tilted text"
+                        >
+                            نص مقلوب/مائل بزاوية
+                        </span>
+                    </label>
+
+                    <div
+                        id="rotatePanel"
+                        class="rotate-panel"
+                        style="display: none;"
+                    >
+                        <div class="rotate-preview">
+                            <img
+                                id="rotatePreviewImage"
+                                src=""
+                                alt="Rotate Preview"
+                            >
+                        </div>
+
+                        <div
+                            id="rotateAngle"
+                            data-ar="زاوية التدوير: 0°"
+                            data-en="Rotation angle: 0°"
+                        >
+                            زاوية التدوير: 0°
+                        </div>
+                    </div>
+
+                    <label class="option">
+                        <input
+                            type="checkbox"
+                            name="condition"
+                            value="small_text"
+                        >
+
+                        <span
+                            data-ar="النص صغير/غير واضح"
+                            data-en="Small/unclear text"
+                        >
+                            النص صغير/غير واضح
+                        </span>
+                    </label>
+                </div>
+
+                <div
+                    class="language-conditions"
+                    data-language="en"
+                    style="display: none;"
+                >
+                </div>
+            </section>
+
+            <section class="card">
+                <button
+                    id="startButton"
+                    type="button"
+                    disabled
+                    data-ar="بدء"
+                    data-en="Start"
+                >
+                    بدء
+                </button>
+
+                <div id="status"></div>
+            </section>
+
+        </main>
+    </body>
+
+    <script
+        type="module"
+        src="../scripts/app.js"
+    ></script>
+</html>
