@@ -1,6 +1,7 @@
 .
 ├── .gitignore
 ├── ArchiveX_Tech.md
+├── LICENSE
 ├── README.md
 ├── backend/
 │   ├── auth/
@@ -19,30 +20,14 @@
 │   ├── server.js
 │   ├── uploader/
 │   │   ├── cleanup.js
-│   │   ├── old/
-│   │   │   ├── crop.js
-│   │   │   ├── ocr/
-│   │   │   │   ├── ar/
-│   │   │   │   │   ├── ocr.js
-│   │   │   │   │   └── problems/
-│   │   │   │   │       ├── rotate.js
-│   │   │   │   │       └── small_text/
-│   │   │   │   │           └── crop.js
-│   │   │   │   └── en/
-│   │   │   │       └── ocr.js
-│   │   │   ├── ocr.js
-│   │   │   ├── storage.js
-│   │   │   └── upload.js
 │   │   ├── process.js
 │   │   ├── regular.js
-│   │   ├── rotate.js
 │   │   ├── save.js
 │   │   ├── server.js
 │   │   ├── verify.js
 │   │   └── workflow.js
 │   └── utils/
 │       └── interfaceLanguage.js
-├── config.json
 ├── frontend/
 │   ├── auth/
 │   │   ├── api/
@@ -88,16 +73,9 @@
 ├── package.json
 ├── pnpm-lock.yaml
 ├── processes/
-│   ├── 47b682b1-87e5-43ec-8723-004de7db6b81/
-│   │   └── original/
-│   │       └── en1.jpg
-│   └── bd1470f4-6856-48ea-ab81-841d85ddd4f9/
-│       └── original/
-│           └── en7.jpg
 ├── processing/
 │   ├── crop.py
-│   ├── merge.py
-│   └── rotate.py
+│   └── merge.py
 ├── scripts/
 │   └── check-cuda.js
 └── test/
